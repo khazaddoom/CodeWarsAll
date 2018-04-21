@@ -1,4 +1,4 @@
-package model;
+package stringsorter;
 
 import java.util.*;
 
