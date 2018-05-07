@@ -12,10 +12,19 @@ public class PangramChecker {
 	
 	public static boolean check(String sentence) {
 		
+		String ref = "abcdefghijklmnopqrstuvwxyz";
+		
 		sentence = sentence.trim();
 		
-		sentence.toCharArray();
+		sentence = sentence.toLowerCase();
 		
+		char[] charsRef = ref.toCharArray();
+		
+		for (int i = 0; i < charsRef.length; i++) {
+			
+			if (sentence.indexOf(charsRef[i]) == -1) return false;
+			
+		}
 		
 		
 		return true;
